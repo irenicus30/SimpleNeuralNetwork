@@ -6,10 +6,10 @@ def nonlin(x, deriv=False):
   return 1/(1+np.exp(-x))
 
 X = np.array([
-      [0,0,1], 
-      [0,1,1], 
-      [1,0,1],
-      [1,1,1]
+      [0,0],
+      [0,1],
+      [1,0],
+      [1,1]
     ])
 
 y = np.array([
@@ -21,7 +21,7 @@ y = np.array([
 
 np.random.seed(1)
 
-syn0 = 2*np.random.random((3,4)) - 1
+syn0 = 2*np.random.random((2,4)) - 1
 syn1 = 2*np.random.random((4,1)) - 1
 
 #training step
